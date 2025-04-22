@@ -1,13 +1,10 @@
-# Use an official Rust runtime as a base image
 FROM rust:1.77-slim-bookworm AS builder
 
-# Set the working directory in the container
 WORKDIR /usr/src/app
 
-# Copy the Cargo manifest file
 COPY Cargo.toml .
 
-# Copy the source code
+
 COPY src ./src
 
 # Build the application in release mode

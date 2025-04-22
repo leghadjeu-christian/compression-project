@@ -49,5 +49,5 @@ function runCli(args) {
     }
 }
 
-// Run the CLI
+
 runCli(process.argv);
