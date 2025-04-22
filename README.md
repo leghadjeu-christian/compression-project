@@ -14,10 +14,10 @@ A compression CLI tool using both Rust and JavaScript, supporting two compressio
         ```bash
         cargo run -- compress|decompress <input file> <outputfile> --rle|lz
         ```
-        * **For JS:**
-        ```
+    * **For JS:**
+```bash
 node index.js compress|decompress <input file> <outputfile> --rle|lz
-        ```
+```
 
 ## Using the docker image.
 * **For Rust:**
