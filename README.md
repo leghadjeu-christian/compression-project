@@ -1,10 +1,34 @@
 # Compression Tool in Rust and Javascript
 A compression CLI tool using both Rust and JavaScript, supporting two compression algorithms: Run-Length Encoding (RLE) and Simplified LZ77.
 
-# Compress with RLE
-cargo run -- compress input.txt output.txt --rle
+### Installation
 
-# Decompress with RLE
-cargo run -- decompress output.txt restored.txt --rle
+-  **Clone the repository:**
+    ```bash
+    git clone https://github.com/leghadjeu-christiancompression-project.git
+    cd compression-project
+    ```
 
-node compression.js compress input.txt compressed.dat --rle
+-  **Run the algorithms:**
+    * **For Rust:**
+        ```bash
+        cargo run -- compress|decompress <input file> <outputfile> --rle|lz
+        ```
+        * **For JS:**
+        ```
+node index.js compress|decompress <input file> <outputfile> --rle|lz
+        ```
+
+## Using the docker image.
+* **For Rust:**
+
+```bash
+docker pull ghcr.io/leghadjeu-christian/rust-compressor:latest
+```
+
+* **For JS:**
+
+```bash
+docker pull ghcr.io/leghadjeu-christian/js-compressor:latest
+```
+
