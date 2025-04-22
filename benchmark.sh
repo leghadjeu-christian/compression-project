@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # --- Configuration ---
-COMPRESS_CMD="your_compression_command"  # Replace with your compression command
+COMPRESS_CMD="cargo run -- compress|decompress ./README.md outputfile --rle|lz"  # Replace with your compression command
 DECOMPRESS_CMD="your_decompression_command" # Replace with your decompression command
-INPUT_FILE="your_input_file"          # Replace with your input file
-COMPRESSED_FILE="compressed_output.bin" # Output file for compression
-DECOMPRESSED_FILE="decompressed_output" # Output file for decompression
+INPUT_FILE="./README.md"          # Replace with your input file
+COMPRESSED_FILE="outputfile" # Output file for compression
+DECOMPRESSED_FILE="input" # Output file for decompression
 NUM_RUNS=5                            # Number of times to run each operation
 
 # --- Helper Function to Run and Time a Command ---
