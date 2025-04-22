@@ -1,4 +1,5 @@
 # Compress with RLE
+
 cargo run -- compress input.txt output.txt --rle
 
 # Decompress with RLE
