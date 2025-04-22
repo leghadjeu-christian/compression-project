@@ -14,5 +14,8 @@
     "url": "js-compressor"
   },
   "author": "leghadjeu-christian",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^11.1.0"
+  }
 }
