@@ -35,6 +35,6 @@ docker pull ghcr.io/leghadjeu-christian/js-compressor:latest
 After pulling the images run them with their corresponding arguments as specified above.
 
 ```bash
-docker run compress|decompress <input file> <outputfile> --rle|lz
+docker run <image_name> [OPTIONS] compress|decompress <input file> <outputfile> --rle|lz
 ```
 
